@@ -25,34 +25,56 @@ public final class R {
         public static final int button_enemies_def=0x7f020001;
         public static final int button_friends=0x7f020002;
         public static final int button_friends_def=0x7f020003;
-        public static final int button_locate=0x7f020004;
-        public static final int button_locate_def=0x7f020005;
-        public static final int button_locate_on=0x7f020006;
-        public static final int button_refresh=0x7f020007;
-        public static final int button_refresh_def=0x7f020008;
-        public static final int button_refresh_on=0x7f020009;
-        public static final int centre_radar=0x7f02000a;
-        public static final int ic_launcher=0x7f02000b;
-        public static final int list_footer=0x7f02000c;
-        public static final int main=0x7f02000d;
-        public static final int radar_header=0x7f02000e;
-        public static final int radar_sweep=0x7f02000f;
+        public static final int button_friends_list_add=0x7f020004;
+        public static final int button_friends_list_add_def=0x7f020005;
+        public static final int button_friends_list_done=0x7f020006;
+        public static final int button_friends_list_edit=0x7f020007;
+        public static final int button_friends_list_edit_def=0x7f020008;
+        public static final int button_list_delete=0x7f020009;
+        public static final int button_list_delete_def=0x7f02000a;
+        public static final int button_locate=0x7f02000b;
+        public static final int button_locate_def=0x7f02000c;
+        public static final int button_locate_on=0x7f02000d;
+        public static final int button_radar=0x7f02000e;
+        public static final int button_radar_def=0x7f02000f;
+        public static final int button_refresh=0x7f020010;
+        public static final int button_refresh_def=0x7f020011;
+        public static final int button_refresh_on=0x7f020012;
+        public static final int centre_radar=0x7f020013;
+        public static final int friends_list_header=0x7f020014;
+        public static final int friends_list_item_background=0x7f020015;
+        public static final int ic_launcher=0x7f020016;
+        public static final int list_footer=0x7f020017;
+        public static final int main=0x7f020018;
+        public static final int radar_header=0x7f020019;
+        public static final int radar_sweep=0x7f02001a;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000a;
+        public static final int action_settings=0x7f080013;
         public static final int btn_enemies=0x7f080009;
         public static final int btn_friends=0x7f080008;
+        public static final int btn_friends_list_add=0x7f08000d;
+        public static final int btn_friends_list_edit=0x7f08000e;
+        public static final int btn_friends_list_enemies=0x7f080012;
+        public static final int btn_friends_list_radar=0x7f080011;
         public static final int btn_locate=0x7f080004;
         public static final int btn_refresh=0x7f080005;
+        public static final int delete_button_cell=0x7f08000b;
         public static final int empty_filler=0x7f080006;
         public static final int header=0x7f080001;
         public static final int imageview_sweep=0x7f080003;
+        public static final int lvw_friends_list=0x7f08000f;
         public static final int map_view=0x7f080000;
+        public static final int name_cell=0x7f08000a;
         public static final int vgp_center=0x7f080002;
         public static final int vgp_footer=0x7f080007;
+        public static final int vgp_friends_list_footer=0x7f080010;
+        public static final int vgp_friends_list_header=0x7f08000c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int friend_list_item=0x7f030001;
+        public static final int friendlist=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;

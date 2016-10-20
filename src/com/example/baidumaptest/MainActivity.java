@@ -16,8 +16,11 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
-import android.view.Menu;
-import android.widget.Toast;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 	
@@ -35,16 +38,30 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		SDKInitializer.initialize(getApplicationContext());
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
+		
+		Button buttonfl=(Button)findViewById(R.id.btn_friends);
+		buttonfl.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v){
+				Intent intent=new Intent(MainActivity.this, friendlist.class);
+				startActivity(intent);
+			}
+		});
+		
 		mapView=(MapView) findViewById(R.id.map_view);
 		baiduMap=mapView.getMap();
 		baiduMap.setMyLocationEnabled(true);
+		
 		locationManager=(LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		List<String> providerList=locationManager.getProviders(true);
 		if (providerList.contains(LocationManager.GPS_PROVIDER)) {
+			provider=LocationManager.GPS_PROVIDER;
+		}else if(providerList.contains(LocationManager.NETWORK_PROVIDER)){
 			provider=LocationManager.NETWORK_PROVIDER;
+
 		} else {
-			Toast.makeText(this, "No location provider to use", Toast.LENGTH_SHORT);
 			return;
 		}
 		Location location=locationManager.getLastKnownLocation(provider);

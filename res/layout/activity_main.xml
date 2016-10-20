@@ -6,15 +6,13 @@
 
     <com.baidu.mapapi.map.MapView
         android:id="@+id/map_view"
-        android:layout_width="fill_parent"
-        android:layout_height="413dp"
-        android:layout_marginTop="20dp"
-        android:clickable="false"
-        android:enabled="true" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"	/>
 
     <LinearLayout
         android:id="@+id/header"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_alignParentTop="true"
         android:background="@drawable/radar_header"
@@ -22,12 +20,12 @@
 
     <FrameLayout
         android:id="@+id/vgp_center"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/header" >
 
         <RelativeLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="360dp"
             android:paddingTop="10dp" >
 
@@ -75,7 +73,7 @@
 
     <LinearLayout
         android:id="@+id/vgp_footer"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/list_footer" >
